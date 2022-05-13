@@ -9,7 +9,7 @@ def load(filepath):
         lines = []
         with open(filepath) as file_:
             for line in file_:
-                print(line)
+                print(line, end='')
                 lines.append(line)
         return lines 
     except FileNotFoundError as e:
