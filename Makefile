@@ -9,9 +9,12 @@ virtualenv:
 	@../.venv/bin/python -m pip -m venv .venv
 
 
-lint:
-	@../.venv/bin/pflake8
+fmt:
+	@../.venv/bin/black dundie tests integration
 
+
+lint:
+	@../.venv/bin/pflake8 
 
 ipython:
 	@../.venv/bin/ipython
